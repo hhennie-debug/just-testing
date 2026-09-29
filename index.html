@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Carter — Full-Stack Developer & Designer. Portfolio showcasing projects, skills, and experience." />
+  <title>Alex Carter · Full-Stack Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">alex<span>.carter</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle__icon sun">☀️</span>
+          <span class="theme-toggle__icon moon">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn--sm nav__cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">👋 Hello, I'm</p>
+        <h1 class="hero__title reveal">Alex <span class="grad">Carter</span></h1>
+        <p class="hero__sub reveal">I build <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+        <p class="hero__desc reveal">Full-stack developer with a designer's eye. I craft fast, accessible web experiences that turn ideas into products people love.</p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View My Work ↓</a>
+          <a href="#" class="btn btn--ghost" onclick="alert('Add your resume PDF and point this link to it.');return false;">Download CV</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="6">0</span><span class="stat__label">Years Experience</span></div>
+          <div class="stat"><span class="stat__num" data-count="40">0</span><span class="stat__label">Projects Shipped</span></div>
+          <div class="stat"><span class="stat__num" data-count="18">0</span><span class="stat__label">Happy Clients</span></div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container grid-2">
+        <div class="about__visual reveal">
+          <div class="about__card">
+            <div class="avatar">AC</div>
+            <div class="about__badges">
+              <span class="chip">🏝 Remote-friendly</span>
+              <span class="chip">🚀 Startup energy</span>
+              <span class="chip">♿ Accessibility first</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="section__eyebrow reveal">About Me</p>
+          <h2 class="section__title reveal">Code, craft &amp; a bit of chaos ✨</h2>
+          <p class="reveal">I'm a full-stack developer based in Austin, TX who loves taking products from rough sketch to polished release. My sweet spot is the intersection of design and engineering — building interfaces that feel effortless and backends that stay calm under load.</p>
+          <p class="reveal">Over the past six years I've shipped SaaS dashboards, e-commerce platforms, and developer tools used by thousands of people. When I'm not coding, I'm contributing to open source, mentoring juniors, or over-engineering my home lab.</p>
+          <ul class="about__facts reveal">
+            <li><strong>Name:</strong> Alex Carter</li>
+            <li><strong>Location:</strong> Austin, TX (UTC−5)</li>
+            <li><strong>Email:</strong> hello@alexcarter.dev</li>
+            <li><strong>Status:</strong> <span class="available">● Available for freelance</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <p class="section__eyebrow center reveal">Skills</p>
+        <h2 class="section__title center reveal">My Technical Toolbox 🧰</h2>
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <div class="skill"><div class="skill__head"><span>React / Next.js</span><span>95%</span></div><div class="bar"><i style="--w:95%"></i></div></div>
+            <div class="skill"><div class="skill__head"><span>TypeScript</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="skill"><div class="skill__head"><span>CSS / Tailwind</span><span>92%</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <div class="skill"><div class="skill__head"><span>Node.js / Express</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="skill"><div class="skill__head"><span>Python / FastAPI</span><span>82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+            <div class="skill"><div class="skill__head"><span>PostgreSQL / Redis</span><span>85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>DevOps & Tools</h3>
+            <div class="skill"><div class="skill__head"><span>Docker / K8s</span><span>80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill__head"><span>AWS / GCP</span><span>78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+            <div class="skill"><div class="skill__head"><span>CI/CD (GitHub Actions)</span><span>88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+          </div>
+        </div>
+        <div class="tags reveal">
+          <span class="tag">GraphQL</span><span class="tag">Vite</span><span class="tag">Jest</span><span class="tag">Playwright</span>
+          <span class="tag">Figma</span><span class="tag">Git</span><span class="tag">WebSockets</span><span class="tag">PWA</span>
+          <span class="tag">a11y</span><span class="tag">SEO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section__eyebrow center reveal">Portfolio</p>
+        <h2 class="section__title center reveal">Featured Projects 🚀</h2>
+        <div class="filters reveal" id="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="opensource">Open Source</button>
+        </div>
+        <div class="projects__grid" id="projectsGrid">
+          <article class="project reveal" data-cat="web">
+            <div class="project__thumb" style="--c1:#6366f1;--c2:#22d3ee">📊</div>
+            <div class="project__body">
+              <h3>Pulse Analytics</h3>
+              <p>Real-time SaaS analytics dashboard handling 2M+ events/day with sub-second charts.</p>
+              <div class="project__tags"><span>React</span><span>Node.js</span><span>ClickHouse</span></div>
+              <div class="project__links"><a href="#" onclick="return false;">Live Demo ↗</a><a href="#" onclick="return false;">GitHub ↗</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web">
+            <div class="project__thumb" style="--c1:#f59e0b;--c2:#ef4444">🛒</div>
+            <div class="project__body">
+              <h3>Marketly</h3>
+              <p>Headless e-commerce storefront with Stripe checkout; +34% conversion after redesign.</p>
+              <div class="project__tags"><span>Next.js</span><span>Stripe</span><span>PostgreSQL</span></div>
+              <div class="project__links"><a href="#" onclick="return false;">Live Demo ↗</a><a href="#" onclick="return false;">GitHub ↗</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="mobile">
+            <div class="project__thumb" style="--c1:#10b981;--c2:#84cc16">🏃</div>
+            <div class="project__body">
+              <h3>TrailMate</h3>
+              <p>Cross-platform fitness app with offline sync and social challenges. 10k+ downloads.</p>
+              <div class="project__tags"><span>React Native</span><span>Expo</span><span>Firebase</span></div>
+              <div class="project__links"><a href="#" onclick="return false;">App Store ↗</a><a href="#" onclick="return false;">Case Study ↗</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="opensource">
+            <div class="project__thumb" style="--c1:#a855f7;--c2:#ec4899">🔌</div>
+            <div class="project__body">
+              <h3>vite-plugin-i18n-lite</h3>
+              <p>Zero-config i18n bundler plugin. 1.2k ★ on GitHub, used by 300+ projects.</p>
+              <div class="project__tags"><span>TypeScript</span><span>Vite</span><span>npm</span></div>
+              <div class="project__links"><a href="#" onclick="return false;">GitHub ↗</a><a href="#" onclick="return false;">npm ↗</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web">
+            <div class="project__thumb" style="--c1:#0ea5e9;--c2:#6366f1">🎙</div>
+            <div class="project__body">
+              <h3>WaveRoom</h3>
+              <p>Browser-based podcast studio with WebRTC recording and AI transcription.</p>
+              <div class="project__tags"><span>WebRTC</span><span>Whisper API</span><span>AWS S3</span></div>
+              <div class="project__links"><a href="#" onclick="return false;">Live Demo ↗</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="opensource">
+            <div class="project__thumb" style="--c1:#14b8a6;--c2:#0ea5e9">🧪</div>
+            <div class="project__body">
+              <h3>schema-forge</h3>
+              <p>CLI that generates type-safe API clients from OpenAPI specs in one command.</p>
+              <div class="project__tags"><span>Rust</span><span>OpenAPI</span><span>CLI</span></div>
+              <div class="project__links"><a href="#" onclick="return false;">GitHub ↗</a><a href="#" onclick="return false;">Docs ↗</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <p class="section__eyebrow center reveal">Career</p>
+        <h2 class="section__title center reveal">Experience &amp; Education 🎓</h2>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <span class="timeline__date">2023 — Present</span>
+              <h3>Senior Full-Stack Engineer · Nimbus Labs</h3>
+              <p>Lead a team of 5 building a multi-tenant analytics platform. Cut p95 API latency by 60% and drove the migration to a monorepo + CI pipeline.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <span class="timeline__date">2020 — 2023</span>
+              <h3>Frontend Engineer · Brightpath</h3>
+              <p>Owned the design system and customer-facing dashboard. Improved Lighthouse performance score from 58 → 97.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <span class="timeline__date">2018 — 2020</span>
+              <h3>Junior Developer · Studio Kite</h3>
+              <p>Shipped 20+ marketing sites and internal tools for clients in retail and hospitality.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <span class="timeline__date">2014 — 2018</span>
+              <h3>B.S. Computer Science · UT Austin</h3>
+              <p>Graduated with honors. Teaching assistant for Web Systems & HCI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section testimonials">
+      <div class="container">
+        <p class="section__eyebrow center reveal">Kind Words</p>
+        <h2 class="section__title center reveal">What People Say 💬</h2>
+        <div class="testimonials__grid">
+          <figure class="quote reveal">
+            <p>"Alex is the rare engineer who cares about pixels <em>and</em> performance. Our dashboard has never been faster or better-looking."</p>
+            <figcaption><strong>Mia Chen</strong> · CTO, Nimbus Labs</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <p>"Delivered ahead of schedule and communicated like a pro. The redesign lifted our checkout conversion by a third."</p>
+            <figcaption><strong>David Okafor</strong> · Founder, Marketly</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <p>"His open-source plugin saved my team weeks of work. Great docs, zero drama. A model contributor."</p>
+            <figcaption><strong>Sofia Reyes</strong> · Eng Lead, Cadence</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container grid-2">
+        <div>
+          <p class="section__eyebrow reveal">Contact</p>
+          <h2 class="section__title reveal">Let's build something great together 🤝</h2>
+          <p class="reveal">Have a project in mind, a role to fill, or just want to talk shop? My inbox is always open.</p>
+          <div class="contact__socials reveal">
+            <a href="mailto:hello@alexcarter.dev" class="soc">✉️ hello@alexcarter.dev</a>
+            <a href="#" onclick="return false;" class="soc">🐙 GitHub</a>
+            <a href="#" onclick="return false;" class="soc">💼 LinkedIn</a>
+            <a href="#" onclick="return false;" class="soc">🐦 X / Twitter</a>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message 🚀</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Alex Carter. Crafted with vanilla HTML, CSS &amp; JS — no frameworks harmed.</p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
